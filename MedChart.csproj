@@ -5,6 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="MedChart.UI.React\**" />
+    <Content Remove="MedChart.UI.React\**" />
+    <EmbeddedResource Remove="MedChart.UI.React\**" />
+    <None Remove="MedChart.UI.React\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="Migrations\20220124010731_Initial_migration.cs" />
     <Compile Remove="Migrations\20220124010731_Initial_migration.Designer.cs" />
   </ItemGroup>
