@@ -22,6 +22,8 @@ namespace MedChart.MappingConfiguration
 
             CreateMap<AddPaginationRequest, PaginationParams>()
                 .ForMember(x => x.Order, request => request.MapFrom(req => EnumHelper.GetValueFromDescription<EPaginationOrder>(req.Order.ToLower())));
+
+            CreateMap<AddBloodPressureRequest, BloodPressure>();
         }
     }
 }
